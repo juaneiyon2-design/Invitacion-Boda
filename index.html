@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juan y Mica — ¡Nos casamos!</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top left, #e0c3fc, #8ec5fc);
+  color: #333;
+}
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, rgba(161,140,209,0.9), rgba(251,194,235,0.9));
+  color: #4a0072;
+}
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+}
+button {
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #ff8f81;
+}
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 2rem;
+  background: rgba(255,255,255,0.7);
+}
+.gallery img {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  margin-top: 2rem;
+}
+.map, section {
+  text-align: center;
+  padding: 2rem;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  color: #555;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Juan y Mica — ¡Nos casamos!</h1>
+  <p>Nos llena de alegría compartir con ustedes este día tan especial. Cada uno forma parte de nuestra historia y queremos que celebren junto a nosotros el comienzo de esta nueva etapa llena de amor. 💕</p>
+  <p><strong>Sábado 14 de marzo de 2026 — 9:30 a.m.</strong></p>
+  <button onclick="playMusic()">🎶 ¡Empezá la música!</button>
+</header>
+
+<section class="gallery">
+  <img src="fotos/1000002140.jpg" alt="Foto 1">
+  <img src="fotos/1000005287.jpg" alt="Foto 2">
+  <img src="fotos/1000006566.jpg" alt="Foto 3">
+</section>
+
+<section class="map">
+  <h2>Ubicaciones</h2>
+  <p>📖 Civil y conferencia: <strong>Salón del Reino — Calle 32, San Clemente del Tuyú</strong></p>
+  <iframe src="https://www.google.com/maps?q=Salón+del+Reino,+Calle+32,+San+Clemente+del+Tuyú&output=embed"></iframe>
+  <p>💃 Fiesta: <strong>#Hashtag — Costanera y Calle 19, San Clemente del Tuyú</strong></p>
+  <iframe src="https://www.google.com/maps?q=Costanera+y+Calle+19,+San+Clemente+del+Tuyú&output=embed"></iframe>
+</section>
+
+<section>
+  <h2>Confirmación de asistencia</h2>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8i4zADS8JH36m0oOCmiqSfpZwI4xm-IXDs681bJk5WwfhUQ/viewform?embedded=true"></iframe>
+</section>
+
+<section>
+  <h2>Trivia: ¿Cuánto conocés a Juan y Mica?</h2>
+  <p>(Próximamente tus preguntas personalizadas 💜)</p>
+</section>
+
+<footer>
+  <p>Con todo nuestro cariño, Juan y Mica 💍</p>
+</footer>
+
+<script>
+function playMusic() {
+  const audio = new Audio('musica/tema1.mp3');
+  audio.loop = true;
+  audio.play();
+}
+</script>
+</body>
+</html>
